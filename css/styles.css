@@ -253,6 +253,17 @@ button:focus {
   margin: 0;
 }
 
+.features-icon-bg {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
 /*
   |============================
   | About us
@@ -339,15 +350,50 @@ button:focus {
   align-items: center;
   width: 44px;
   height: 44px;
-  fill: #afb1b8;
+  color: #afb1b8;
 }
 .socials-link:hover,
 .socials-link:focus,
 .socials-link-footer:hover,
 .socials-link-footer:focus {
-  fill: var(--secondary-text-color);
+  color: var(--secondary-text-color);
   border-radius: 50%;
   background-color: var(--aсcent-text-color);
+}
+
+.socials-icon:hover,
+.socials-icon:focus {
+  fill: currentColor;
+}
+
+/*
+  |============================
+  | Постійні клієнти
+  |============================
+*/
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+.client-icon {
+  fill: currentColor;
 }
 
 /*
@@ -355,7 +401,6 @@ button:focus {
   | Footer
   |============================
 */
-
 .logo-footer {
   padding: 0;
   margin-bottom: 20px;
@@ -408,14 +453,15 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: currentColor;
   color: var(--secondary-text-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-
+.socials-icon {
+  fill: currentColor;
+}
 /*
   |============================
   |============================
@@ -486,10 +532,23 @@ button:focus {
 
 .project-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .project-card {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+.card-set-link {
+  border: 1px solid transparent;
+}
+
+.card-set-link:hover,
+.card-set-link:focus {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
