@@ -170,10 +170,10 @@ img {
   margin: 0 auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
-  background-image: url(../images/hero-bg.jpg);
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -361,18 +361,17 @@ button:focus {
   width: 44px;
   height: 44px;
   color: #afb1b8;
+  border-radius: 50%;
 }
 .socials-link:hover,
 .socials-link:focus,
 .socials-link-footer:hover,
 .socials-link-footer:focus {
   color: var(--secondary-text-color);
-  border-radius: 50%;
   background-color: var(--aсcent-text-color);
 }
 
-.socials-icon:hover,
-.socials-icon:focus {
+.socials-icon {
   fill: currentColor;
 }
 
@@ -422,7 +421,7 @@ button:focus {
 
 .contacts {
   background-color: #2f303a;
-  padding: 60px 0;
+  padding: 0;
 }
 
 .footer-list .item {
@@ -446,11 +445,16 @@ button:focus {
 }
 .footer-info {
   width: 231px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-right: 70px;
 }
 
+.join {
+  padding-top: 72px;
+}
+
 .footer-socials-title {
-  padding-top: 12px;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
@@ -469,9 +473,7 @@ button:focus {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.socials-icon {
-  fill: currentColor;
-}
+
 /*
   |============================
   |============================
